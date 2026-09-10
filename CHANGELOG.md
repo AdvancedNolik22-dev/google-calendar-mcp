@@ -1,5 +1,58 @@
 # Changelog
 
+## 1.0.0 (2026-09-10)
+
+
+### Features
+
+* add create recurring event feature ([9817dfe](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/9817dfe35d10baf402568e66dd432822e131580c))
+* add create-events bulk tool for batch event creation ([#169](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/169)) ([85e26f8](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/85e26f8a7efe4ad380ff285303a84b1f7b65c12b))
+* add dayOfWeek to get-current-time response ([#159](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/159)) ([7732c62](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/7732c625ad687756e73951191942ee99f9f362a7))
+* Add Focus Time, Out of Office, and Working Location event types ([#144](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/144)) ([a176e64](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/a176e6459ff7e63e3f0e7c3a56b79b3ea0588741))
+* add manage-accounts tool for in-chat account management ([#139](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/139)) ([ba3c083](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/ba3c0838b137625596dbeb87b5dc4108f84ffdea))
+* add PKCE and state parameter validation for OAuth security ([#173](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/173)) ([d69780e](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/d69780e1e053f0f326ea754eaac5ecfa48369637))
+* add startDayOfWeek and endDayOfWeek to StructuredEvent ([#157](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/157)) ([3375f70](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/3375f70a2c731efa84f0f5d8ff868eade135b929))
+* add tool description token analysis for PRs ([e7d32a2](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/e7d32a2e23ef8d7f32960e92eff1eb54df4976ac))
+* add tool filtering via --enable-tools flag ([#149](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/149)) ([c69cb4e](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/c69cb4e38deb6f5350ab651fe7dd765d04558197))
+* add update recurring event feature ([659c10a](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/659c10ab2be3858aeee3523a9662544436bce63a))
+* consolidate event types into create-event tool ([#150](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/150)) ([2ad7681](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/2ad7681248f3fa5c01356e642def431775e3279a))
+* Multi-account support with smart calendar routing and security hardening ([#132](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/132)) ([e81c687](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/e81c687b8595acd168772c320b660661c9f93f30))
+* per-field timezone support for start/end times ([#171](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/171)) ([a605f1e](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/a605f1e8e4318d3a497033f821771b49226dc4e1))
+* respond-to-event tool with multi-account support ([#136](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/136)) ([225c506](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/225c506288fb95413830ea4ce2bc0b33cfc5dd10))
+* support account-id in auth CLI command ([#137](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/137)) ([25e17fb](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/25e17fbce3b0eb67b97c0212f7765192ba40f297))
+
+
+### Bug Fixes
+
+* add gaxios as direct dependency ([9e4631e](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/9e4631ed4d3ec12f0ef3fadeb62b11e75e8a8a9a))
+* Add quota project header support with centralized credential handling ([#101](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/101)) ([6ab3e3d](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/6ab3e3d0d56ef81e31d434f557a6da9d02264876))
+* add reminders and recurrence to default event fields ([#128](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/128)) ([#130](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/130)) ([b8e3a86](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/b8e3a865b888e6fb15e35a8eb1d3d66c313ac5c4))
+* **auth:** improve port availability error message ([ca07918](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/ca07918d540a24f8dc084dbceea20fc6ad3512a4)), closes [#110](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/110)
+* auto-resolve calendar names and summaryOverride to IDs (closes [#104](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/104)) ([#105](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/105)) ([7f1860a](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/7f1860a47df19a23dfcd7f12f79afdff56ca4d2f))
+* **ci:** remove registry-url so npm OIDC handles auth ([7bfdd77](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/7bfdd77d91d76ed4e8a36e0fa23af84df7700997))
+* **ci:** upgrade npm to 11.5.1+ for OIDC trusted publishing ([020570e](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/020570e896564b44e194e27e1df5cde073c6e63c))
+* clean up create-events handler error handling and caching ([55efdca](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/55efdcaa33efe1731f0884c42bb747431613121e))
+* detect recurring event instances via recurringEventId ([#164](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/164)) ([2af009b](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/2af009bf8b8a73a4aa13df8d5e298f02131866a5))
+* handle "primary" calendar alias for single-account mode ([4455895](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/4455895d21cc7f876de6606adf8d8f773ee0e995))
+* **http:** address review feedback on per-session transport ([6f55908](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/6f559081932e73100d0f680e70d0c8239ebfac3e))
+* **http:** harden session transport handling ([60a1dfd](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/60a1dfd09e87942d0b778c94bdfe2f584aeab19b))
+* **http:** harden session transport handling ([d2b9de5](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/d2b9de52e2b9db7101d206ef740897c69c12193d))
+* **http:** per-session StreamableHTTP transports ([c783399](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/c78339974a4b3ba4815a54e0ecd7a9233e1324af))
+* **http:** use per-session StreamableHTTP transports ([d8ad3a9](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/d8ad3a97e7ad8bb92468f0e6e99b4195e024a3a4))
+* javascript example from examples/ dir ([#91](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/91)) ([2458bb0](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/2458bb08a1ac13458b785e54840e0e4eb737c82a))
+* **list-events:** support native arrays for Python MCP clients ([#95](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/95)) ([#116](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/116)) ([7ea527b](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/7ea527b13a5fbf8f20d7eee9c8cd3c9a88c42f14))
+* move esbuild to devDependencies and fix publish workflow ([e9d1257](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/e9d1257bd3ac7ff4137ad29c9f7a232b8a6d3274)), closes [#113](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/113)
+* prevent origin bypass via subdomain in HTTP transport ([ee6937b](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/ee6937ba31c26b5329cb34cf9536c79dc9470edd))
+* replace z.string().email() with RE2-safe regex ([#184](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/184)) ([206f1e2](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/206f1e2ff7ccc712610343ffc7be3431f7b111f2))
+* resolve macOS installation error and improve publish workflow ([d5b3361](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/d5b33614847b00dfd3d3d57ab2c109f8a9627463)), closes [#113](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/113)
+* Resolve rollup optional dependency issue in CI ([#102](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/102)) ([5bce567](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/5bce5672ce702fde0bb72ab758217f93c88598cf))
+* return currentTime in requested timezone, not UTC ([#127](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/127)) ([2152b1c](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/2152b1c5cdf14daac37b0ebc6a31131304e2be7c))
+* **review:** close init transport whose handshake never commits a session ([4d8e042](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/4d8e042745ccb165e993b18442b367339664ef01))
+* support converting between timed and all-day events in update-event ([#119](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/119)) ([7906e22](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/7906e22be30d5f405c9a8904f86fdd76029be241))
+* Support single-quoted JSON arrays in list-events calendarId ([ce43c96](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/ce43c96bb7d4ef6ba70ff4493e03af76d6d63cb7))
+* update publish workflow to use release-please ([c8423d8](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/c8423d8822826ce21d52db50e49328710c42ac62))
+* **update-event:** preserve attendee responseStatus when updating attendees ([#148](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/issues/148)) ([b8e0023](https://github.com/AdvancedNolik22-dev/google-calendar-mcp/commit/b8e0023fe6120ef7a25afa8c340aba453237cb60))
+
 ## [2.6.3](https://github.com/nspady/google-calendar-mcp/compare/v2.6.2...v2.6.3) (2026-09-02)
 
 
